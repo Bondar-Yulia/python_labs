@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Dealer>
+	<Manufacturer id="m1" name="Volkswagen">
+		<Brand id="b1" name="Volkswagen" is_flagship="0" model_count="50"/>
+		<Brand id="b2" name="Audi" is_flagship="0" model_count="40"/>
+		<Brand id="b3" name="Porsche" is_flagship="1" model_count="35"/>
+	</Manufacturer>
+	<Manufacturer id="m2" name="Renault-Nissan-Mitsubishi Alliance">
+		<Brand id="b4" name="Renault" is_flagship="0" model_count="50"/>
+		<Brand id="b5" name="Nissan" is_flagship="0" model_count="40"/>
+		<Brand id="b6" name="Mitsubishi" is_flagship="0" model_count="30"/>
+	</Manufacturer>
+	<Manufacturer id="m4" name="Toyota Motor Corporation">
+		<Brand id="b7" name="Toyota" is_flagship="1" model_count="50"/>
+		<Brand id="b8" name="Lexus" is_flagship="0" model_count="40"/>
+	</Manufacturer>
+</Dealer>

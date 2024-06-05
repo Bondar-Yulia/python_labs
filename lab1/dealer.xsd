@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Декларація елементу Dealer -->
+  <xs:element name="Dealer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Manufacturer" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Декларація елементу Manufacturer -->
+  <xs:element name="Manufacturer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Brand" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Декларація елементу Brand -->
+  <xs:element name="Brand">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="is_flagship" type="xs:boolean" use="required"/>
+      <xs:attribute name="model_count" type="xs:integer" use="required"/>
+      <xs:attribute name="manufacturer_id" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
