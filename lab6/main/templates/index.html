@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manufacturers</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Manufacturers</h1>
+    <ul>
+        {% for manufacturer in manufacturers %}
+            <li><a href="{% url 'brands' manufacturer.id %}">{{ manufacturer.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
